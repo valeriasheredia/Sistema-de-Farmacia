@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DDCC1628-F717-4D06-BC46-10F48AE8111B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sistema_de_Farmacia.My.MyApplication</StartupObject>
+    <RootNamespace>Sistema_de_Farmacia</RootNamespace>
+    <AssemblyName>Sistema de Farmacia</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sistema de Farmacia.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sistema de Farmacia.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DATOS\DataFarmacia.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataFarmacia.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_Ingreso.Designer.vb">
+      <DependentUpon>Frm_Ingreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_ListaCategorias.Designer.vb">
+      <DependentUpon>Frm_ListaCategorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_ListaCategorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_ListaClientes.Designer.vb">
+      <DependentUpon>Frm_ListaClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_ListaClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_ListaEmpleados.Designer.vb">
+      <DependentUpon>Frm_ListaEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_ListaEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_ListaPresentacion.Designer.vb">
+      <DependentUpon>Frm_ListaPresentacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_ListaPresentacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_ListaProductos.Designer.vb">
+      <DependentUpon>Frm_ListaProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_ListaProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_ListaProveedores.Designer.vb">
+      <DependentUpon>Frm_ListaProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_ListaProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_ListaUsuarios.Designer.vb">
+      <DependentUpon>Frm_ListaUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_ListaUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevaCategoria.Designer.vb">
+      <DependentUpon>Frm_NuevaCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevaCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevaPresentacion.Designer.vb">
+      <DependentUpon>Frm_NuevaPresentacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevaPresentacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevoCliente.Designer.vb">
+      <DependentUpon>Frm_NuevoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevoEmpleado.Designer.vb">
+      <DependentUpon>Frm_NuevoEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevoEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevoOrdenPedido.Designer.vb">
+      <DependentUpon>Frm_NuevoOrdenPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevoOrdenPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevoProducto.Designer.vb">
+      <DependentUpon>Frm_NuevoProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevoProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevoProveedor.Designer.vb">
+      <DependentUpon>Frm_NuevoProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevoProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevoUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_NuevoUsuario.Designer.vb">
+      <DependentUpon>Frm_NuevoUsuario.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_Menu_Principal.Designer.vb">
+      <DependentUpon>Frm_Menu_Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORMULARIOS\Frm_Menu_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="DATOS\DataFarmacia.dbml.layout">
+      <DependentUpon>DataFarmacia.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FORMULARIOS\Frm_Ingreso.resx">
+      <DependentUpon>Frm_Ingreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_ListaCategorias.resx">
+      <DependentUpon>Frm_ListaCategorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_ListaClientes.resx">
+      <DependentUpon>Frm_ListaClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_ListaEmpleados.resx">
+      <DependentUpon>Frm_ListaEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_ListaPresentacion.resx">
+      <DependentUpon>Frm_ListaPresentacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_ListaProductos.resx">
+      <DependentUpon>Frm_ListaProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_ListaProveedores.resx">
+      <DependentUpon>Frm_ListaProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_ListaUsuarios.resx">
+      <DependentUpon>Frm_ListaUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_NuevaCategoria.resx">
+      <DependentUpon>Frm_NuevaCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_NuevaPresentacion.resx">
+      <DependentUpon>Frm_NuevaPresentacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_NuevoCliente.resx">
+      <DependentUpon>Frm_NuevoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_NuevoEmpleado.resx">
+      <DependentUpon>Frm_NuevoEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_NuevoOrdenPedido.resx">
+      <DependentUpon>Frm_NuevoOrdenPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_NuevoProducto.resx">
+      <DependentUpon>Frm_NuevoProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_NuevoProveedor.resx">
+      <DependentUpon>Frm_NuevoProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_NuevoUsuario.resx">
+      <DependentUpon>Frm_NuevoUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMULARIOS\Frm_Menu_Principal.resx">
+      <DependentUpon>Frm_Menu_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DATOS\DataFarmacia.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataFarmacia.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="REPORTES\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\índice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\índice1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
