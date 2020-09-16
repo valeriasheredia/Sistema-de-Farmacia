@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Farmacia" Class="DataFarmacia" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=VALE\VALEVALERIA;Initial Catalog=Farmacia;Integrated Security=True" SettingsObjectName="Sistema_de_Farmacia.My.MySettings" SettingsPropertyName="FarmaciaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Boleta" Member="Boleta">
+    <Type Name="Boleta">
+      <Column Name="id_boleta" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fecha_boleta" Storage="_fecha" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="id_empleado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_cliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_orden_pedido" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="subtotal" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="descuento" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="total" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="Clientes_Boleta" Member="Clientes" ThisKey="id_cliente" OtherKey="id_cliente" Type="Clientes" IsForeignKey="true" />
+      <Association Name="Empleado_Boleta" Member="Empleado" ThisKey="id_empleado" OtherKey="id_empleado" Type="Empleado" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Usuario" Member="Usuario">
+    <Type Name="Usuario">
+      <Column Name="id_usuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="perfil_usuario" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="nombre_usuario" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="contraseña_usuario" Storage="_contraseña" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Categoria" Member="Categoria">
+    <Type Name="Categoria">
+      <Column Name="id_categoria" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre_categoria" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Association Name="Categoria_Producto" Member="Producto" ThisKey="id_categoria" OtherKey="id_categoria" Type="Producto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Clientes" Member="Clientes">
+    <Type Name="Clientes">
+      <Column Name="id_cliente" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre_cliente" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="direccion_cliente" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="localidad_cliente" Storage="_localidad" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="sexo" Type="System.String" DbType="VarChar(10) NULL" CanBeNull="false" />
+      <Column Name="dni_cliente" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ruc_cliente" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="telefono_cliente" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="Clientes_Boleta" Member="Boleta" ThisKey="id_cliente" OtherKey="id_cliente" Type="Boleta" />
+      <Association Name="Clientes_OrdenPedido" Member="OrdenPedido" ThisKey="id_cliente" OtherKey="id_cliente" Type="OrdenPedido" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DetalleOrdenPedido" Member="DetalleOrdenPedido">
+    <Type Name="DetalleOrdenPedido">
+      <Column Name="id_detalle_orden_pedido" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_producto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cantidad" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="precio_venta" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="importe" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="id_orden_pedido" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="OrdenPedido_DetalleOrdenPedido" Member="OrdenPedido" ThisKey="id_orden_pedido" OtherKey="id_orden_pedido" Type="OrdenPedido" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="Producto_DetalleOrdenPedido" Member="Producto" ThisKey="id_producto" OtherKey="id_producto" Type="Producto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Empleado" Member="Empleado">
+    <Type Name="Empleado">
+      <Column Name="id_empleado" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre_empleado" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="direccion_empleado" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="localidad_empleado" Storage="_localidad" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="cargo_empleado" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="edad" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="telefono_empleado" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="fecha_ingreso" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="Empleado_Boleta" Member="Boleta" ThisKey="id_empleado" OtherKey="id_empleado" Type="Boleta" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrdenPedido" Member="OrdenPedido">
+    <Type Name="OrdenPedido">
+      <Column Name="id_orden_pedido" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fecha_pedido" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="id_cliente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_empleado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tipo_pago" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="total" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="OrdenPedido_DetalleOrdenPedido" Member="DetalleOrdenPedido" ThisKey="id_orden_pedido" OtherKey="id_orden_pedido" Type="DetalleOrdenPedido" />
+      <Association Name="Clientes_OrdenPedido" Member="Clientes" ThisKey="id_cliente" OtherKey="id_cliente" Type="Clientes" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Presentacion" Member="Presentacion">
+    <Type Name="Presentacion">
+      <Column Name="id_presentacion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre_presentacion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Presentacion_Producto" Member="Producto" ThisKey="id_presentacion" OtherKey="id_categoria" Type="Producto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Producto" Member="Producto">
+    <Type Name="Producto">
+      <Column Name="id_producto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre_producto" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="precio_venta" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="precio_compra" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="fecha_vencimiento" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="stock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_categoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_proveedor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_presentacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Producto_DetalleOrdenPedido" Member="DetalleOrdenPedido" ThisKey="id_producto" OtherKey="id_producto" Type="DetalleOrdenPedido" />
+      <Association Name="Categoria_Producto" Member="Categoria" ThisKey="id_categoria" OtherKey="id_categoria" Type="Categoria" IsForeignKey="true" />
+      <Association Name="Presentacion_Producto" Member="Presentacion" ThisKey="id_categoria" OtherKey="id_presentacion" Type="Presentacion" IsForeignKey="true" />
+      <Association Name="Proveedor_Producto" Member="Proveedor" ThisKey="id_proveedor" OtherKey="id_proveedor" Type="Proveedor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Proveedor" Member="Proveedor">
+    <Type Name="Proveedor">
+      <Column Name="id_proveedor" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre_proveedor" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="direccion_proveedor" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="telefono_proveedor" Storage="_telefono" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="localidad_proveedor" Storage="_localidad" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="Proveedor_Producto" Member="Producto" ThisKey="id_proveedor" OtherKey="id_proveedor" Type="Producto" />
+    </Type>
+  </Table>
+</Database>
