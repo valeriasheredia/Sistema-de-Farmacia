@@ -1,0 +1,56 @@
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\bin\Debug\Sistema de Farmacia.exe.config
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\bin\Debug\Sistema de Farmacia.exe
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\bin\Debug\Sistema de Farmacia.pdb
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\bin\Debug\Sistema de Farmacia.xml
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_ListaCategorias.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_ListaClientes.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_ListaProveedores.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_ListaUsuarios.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_NuevaCategoria.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_NuevaPresentacion.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_NuevoCliente.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_NuevoProveedor.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.frm_nuevo_usuario.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Resources.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema de Farmacia.vbproj.GenerateResource.Cache
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema de Farmacia.exe
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema de Farmacia.xml
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema de Farmacia.pdb
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_ListaPresentacion.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_NuevoEmpleado.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_ListaEmpleados.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_NuevoProducto.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_ListaProductos.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_NuevoOrdenPedido.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_Ingreso.resources
+E:\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_Menu_Principal.resources
+E:\USUARIOS\Desarrollo\Desktop\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\bin\Debug\Sistema de Farmacia.exe.config
+E:\USUARIOS\Desarrollo\Desktop\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema de Farmacia.exe
+E:\USUARIOS\Desarrollo\Desktop\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema de Farmacia.xml
+E:\USUARIOS\Desarrollo\Desktop\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema de Farmacia.pdb
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\bin\Debug\Sistema de Farmacia.exe.config
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema de Farmacia.exe
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema de Farmacia.xml
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema de Farmacia.pdb
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\bin\Debug\Sistema de Farmacia.exe
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\bin\Debug\Sistema de Farmacia.pdb
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\bin\Debug\Sistema de Farmacia.xml
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_Ingreso.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_ListaCategorias.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_ListaClientes.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_ListaEmpleados.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_ListaPresentacion.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_ListaProductos.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_ListaProveedores.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_ListaUsuarios.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_NuevaCategoria.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_NuevaPresentacion.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_NuevoCliente.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_NuevoEmpleado.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_NuevoOrdenPedido.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_NuevoProducto.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_NuevoProveedor.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.frm_nuevo_usuario.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Frm_Menu_Principal.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema_de_Farmacia.Resources.resources
+E:\trabajos\Trabajo Vale\Informacion varia\Sistema de Farmacia\Sistema de Farmacia\Sistema de Farmacia\obj\x86\Debug\Sistema de Farmacia.vbproj.GenerateResource.Cache
